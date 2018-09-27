@@ -72,6 +72,9 @@ public class Colosseum {
      *         Implement this function.
      */
     public static Pokemon buildPokemon() {
+        Stirng name 'dolphin';
+        attacklevel = 47;
+        defenselevel = 3;
         Pokemon tempPokemon = new Pokemon();
         return tempPokemon;
     }
@@ -90,6 +93,7 @@ public class Colosseum {
      * Implement this function.
      */
     public static void printWhoIsAhead() {
+
         System.out.println("Implement me!");
     }
 
@@ -99,8 +103,18 @@ public class Colosseum {
      * This will only be called if there is not a tie, so you don't need to worry about this case.
      * <p>
      * Write this function.
+     * @return sjkjksjsks.
      */
-    public static void determineWinner() {
+    public static void determineWinner(final int a, final int b) {
+        if (a < MAX_HIT_POINTS || b < MAX_HIT_POINTS) {
+            return null;
+        } else if (a > b) {
+            System.out.println("a" + " is the winner");
+        } else if (a < b) {
+            System.out.println("b" + " is the winner");
+        } else if (a == b) {
+            System.out.println("there is a tie");
+        }
         System.out.println("Implement me!");
     }
 
